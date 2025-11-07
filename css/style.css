@@ -412,6 +412,72 @@ ol {
 }
 
 .header__logo a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: #1c1c1c !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilos para el logo pequeño */
+.small-logo {
+    height: 30px; /* Ajusta el tamaño según sea necesario */
+    width: auto;
+    transition: all 0.3s;
+}
+
+/* Ajustes específicos para el logo en el menú hamburguesa */
+.humberger__menu__logo .logo-container {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Ajustes específicos para el logo en el encabezado */
+.header__logo .logo-container {
+    justify-content: flex-start;
+}
+
+/* Ajustes específicos para el logo en el pie de página */
+.footer__about__logo .logo-container {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Ajustes de hover para el logo */
+.logo-container:hover .small-logo {
+    transform: scale(1.1);
+}
+
+.humberger__menu__logo .logo-text {
+    color: #1c1c1c !important;
+    font-size: 24px !important;
+}
+
+.footer__about__logo .logo-text {
+    color: #ffffff !important;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.header__logo a {
 	display: inline-block;
 }
 
@@ -3431,21 +3497,67 @@ ol {
 		width: 100px;
 	}
 	.product__details__tab .nav-tabs li {
-		margin-right: 20px;
 	}
-	.shoping__cart__btns {
-		text-align: center;
+
+	/* Ajustes específicos para el logo en el pie de página */
+	.footer__about__logo .logo-container {
+	    justify-content: center;
+	    margin-bottom: 20px;
 	}
-	.primary-btn.cart-btn.cart-btn-right {
-		float: none;
-		margin-top: 10px;
+
+	/* Ajustes de hover para el logo */
+	.logo-container:hover .small-logo {
+	    transform: scale(1.1);
 	}
-	.shoping__checkout .primary-btn {
-		display: block;
-		text-align: center;
-		padding: 10px 15px 10px;
+
+	/* Small Device = 320px */
+
+	@media only screen and (max-width: 479px) {
+		.hero__search__form form .hero__search__categories {
+			display: none;
+		}
+		.featured__controls ul li {
+			margin-bottom: 10px;
+		}
+		.product__details__text ul li b {
+			width: 100px;
+		}
+		.product__details__tab .nav-tabs li {
+			margin-right: 20px;
+		}
+		.shoping__cart__btns {
+			text-align: center;
+		}
+		.primary-btn.cart-btn.cart-btn-right {
+			float: none;
+			margin-top: 10px;
+		}
+		.shoping__checkout .primary-btn {
+			display: block;
+			text-align: center;
+			padding: 10px 15px 10px;
+		}
+		.map .map-inside {
+			-webkit-transform: translateX(-125px);
+			-ms-transform: translateX(-125px);
+			transform: translateX(-125px);
+		}
+		.map .map-inside .inside-widget {
+			width: 250px;
+		}
+		.product__details__tab .nav-tabs li {
+			margin-right: 15px;
+		}
+		.shoping__discount form input {
+			width: 100%;
+		}
+		.checkout__order {
+			padding: 20px;
+		}
+		.blog__details__hero__text h2 {
+			font-size: 24px;
+		}
 	}
-	.map .map-inside {
 		-webkit-transform: translateX(-125px);
 		-ms-transform: translateX(-125px);
 		transform: translateX(-125px);

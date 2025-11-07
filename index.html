@@ -33,7 +33,10 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <div class="logo-container">
+                <a href="#" class="logo-text">Artesanica</a>
+                <img src="img/logo.png" alt="Logo Artesanica" class="small-logo">
+            </div>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -130,7 +133,10 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <div class="logo-container">
+                            <a href="./index.html" class="logo-text">Artesanica</a>
+                            <img src="img/logo.png" alt="Logo Artesanica" class="small-logo">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -284,19 +290,105 @@
                     </div>
                 </div>
             </div>
-            <div class="row featured__filter">
+            <div class="row featured__filter" id="products-container">
+                <!-- Producto de ejemplo 1 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
-                    <div class="featured__item">
+                    <div class="featured__item" data-product-id="prod_001">
                         <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
                             <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#" class="wishlist-btn" data-product-id="prod_001"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" class="quick-view-btn" data-product-id="prod_001"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#" class="add-to-cart-btn" data-product-id="prod_001"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="product-details.html?id=prod_001">Crab Pool Security</a></h6>
+                            <h5 class="product-price">$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto de ejemplo 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item" data-product-id="prod_002">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#" class="wishlist-btn" data-product-id="prod_002"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" class="quick-view-btn" data-product-id="prod_002"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#" class="add-to-cart-btn" data-product-id="prod_002"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="product-details.html?id=prod_002">Fresh Vegetable Pack</a></h6>
+                            <h5 class="product-price">$25.50</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto de ejemplo 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item" data-product-id="prod_003">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#" class="wishlist-btn" data-product-id="prod_003"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" class="quick-view-btn" data-product-id="prod_003"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#" class="add-to-cart-btn" data-product-id="prod_003"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="product-details.html?id=prod_003">Organic Banana Pack</a></h6>
+                            <h5 class="product-price">$12.99</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto de ejemplo 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood">
+                    <div class="featured__item" data-product-id="prod_004">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#" class="wishlist-btn" data-product-id="prod_004"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" class="quick-view-btn" data-product-id="prod_004"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#" class="add-to-cart-btn" data-product-id="prod_004"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="product-details.html?id=prod_004">Fresh Meat Pack</a></h6>
+                            <h5 class="product-price">$45.99</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto de ejemplo 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat">
+                    <div class="featured__item" data-product-id="prod_005">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#" class="wishlist-btn" data-product-id="prod_005"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" class="quick-view-btn" data-product-id="prod_005"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#" class="add-to-cart-btn" data-product-id="prod_005"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="product-details.html?id=prod_005">Organic Apple</a></h6>
+                            <h5 class="product-price">$8.99</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto de ejemplo 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item" data-product-id="prod_006">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#" class="wishlist-btn" data-product-id="prod_006"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" class="quick-view-btn" data-product-id="prod_006"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#" class="add-to-cart-btn" data-product-id="prod_006"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="product-details.html?id=prod_006">Fresh Orange</a></h6>
+                            <h5 class="product-price">$5.99</h5>
                         </div>
                     </div>
                 </div>
@@ -701,7 +793,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <div class="logo-container">
+                                <a href="./index.html" class="logo-text">Artesanica</a>
+                                <img src="img/logo.png" alt="Logo Artesanica" class="small-logo">
+                            </div>
                         </div>
                         <ul>
                             <li>Address: 60-49 Road 11378 New York</li>
@@ -772,7 +867,9 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
-
+    <!-- Módulos ES6 para el carrito y lista de deseos -->
+    <script type="module" src="/public/js/api.js"></script>
+    <script type="module" src="/public/js/cart-wishlist.js"></script>
 
 </body>
 
